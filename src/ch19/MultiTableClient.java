@@ -47,7 +47,7 @@ public class MultiTableClient extends JFrame {
 //		서버소켓 => 서비스시작
 		try {
 			socket = new Socket("localhost", 9999);
-//			socket = new Socket("192.168.10.82", 9999);
+//			socket = new Socket("ip주소", 9999);
 //									서버 ip       port 
 			dis = new DataInputStream(socket.getInputStream());
 			dos = new DataOutputStream(socket.getOutputStream());
